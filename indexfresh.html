@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+	
+<style>
+.container {
+padding: 16px;
+background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+</style>
+</body>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mini Ajax File Upload Form</title>
+
+		<!-- Google web fonts -->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+
+		<!-- The main CSS file -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+
+		<form id="upload" method="post" action="message.html" enctype="multipart/form-data">
+			<div id="drop">
+				Drop Here 
+
+				<a>Browse</a>
+				<input type="file" name="upl" multiple="">
+			</div>
+			<ul>
+                <!-- The file uploads will be shown here -->
+            </ul>
+			<div class="container">	
+ 
+			<button type="submit" class="registerbtn">Upload Now</button></div>
+
+
+
+		</form>
+
+		<!-- JavaScript Includes -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.knob.js"></script>
+
+        <!-- jQuery File Upload Dependencies -->
+        <script src="assets/js/jquery.ui.widget.js"></script>
+        <script src="assets/js/jquery.iframe-transport.js"></script>
+        <script src="assets/js/jquery.fileupload.js"></script>
+
+        <!-- Our main JS file -->
+        <script src="assets/js/script.js"></script>
+        
+		
+	</body>
+</html>
